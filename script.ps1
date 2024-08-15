@@ -11,6 +11,7 @@ set -euo pipefail
 
 while true; do
     git commit -m "Automated commit on $(date +'%Y-%m-%d %H:%M:%S')"
+    git push -u origin main
     sleep 12h
 done
 
@@ -21,6 +22,7 @@ exit
 
 while($true){
     git commit -m "Automated commit on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+    git push -u origin main
     # Sleep 12 hours (43200 seconds)
     Start-Sleep -Seconds 43200
 }
